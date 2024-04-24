@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    font-family: "Lato";
+    font-size: 16px;
+    color: #333333;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    align-items: center;
+    gap: 10px;
+}
+
+header{
+    padding: 30px 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #EDECFF;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-family: 'Modern No. 20', sans-serif;
+    font-size: 48px;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: 500;
+    font-style: italic;
+    color: white;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid black;
+}
+
+footer{
+    padding-bottom: 60px;
+}
+
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+}
+.nav-container>a{
+    padding: 5px 10px;
+    transition: 0.15s ease-in;
+}
+.nav-container a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    scale: 1.2;
+}
+.search-nav{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    align-items: center;
+}
+
+.cta{
+    background-color: #FBF3EB;
+    padding: 10.5px 30px;
+    font-weight: 600;
+}
+
+.hero{
+    background-color: #EDECFF;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+}
+.hero-text-container{
+    width: 645px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.hero-headline{
+    font-family: "Kaisei Decol";
+    font-size: 56px;
+}
+.hero-text-details{
+    font-weight: light;
+    line-height: 24px;
+}
+.hero-cta{
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+    background-color: #FDD9D3;
+    border-left: 4px solid;
+    padding: 10px 20px 10px 30px;
+    align-items: center;
+}
+.hero-cta>img{
+    transition: 0.15s ease-in;
+}
+.hero-cta:hover>img{
+    transform: translateX(75%);
+}
+.hero-card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.hero-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hero-card>img{
+    border-radius: 24px;
+}
+.hero-card-details{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 8px;
+}
+
+.page-title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.page-title-container.a:hover img{
+    translate: 50%;
+}
+.works-container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.work-card{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.work-card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.work-card-title{
+    font-family: "Kaisei Decol";
+    font-size: 24px;
+}
+.work-card-description{
+    line-height: 24px;
+}
+
+.info-container{
+    margin-block: 60px;
+}
+.categories-nav-container{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.categories-nav-container>a{
+    font-family: "Kaisai Decol";
+    padding: 5px 10px;
+    transition: 0.15s ease-in;
+}
+.categories-nav-container a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    scale: 1.2;
+}
+.content-container{
+    display: flex;
+    flex: row;
+    gap: 30px;
+}
+.content-container>.main{
+    position: relative;
+}
+.content-container>.main>a:hover img{
+    filter: sepia(0.15);
+    scale: 1.025;
+}
+.content-container>.main>.top{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+.content-container>.main>.top>.featured{
+    background-color: white;    
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.content-container>.main>.top>.category{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.content-container>.main>.body{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+}
+.content-container>.main>.body>.title{
+    font-family: "Kaisai Decol";
+    font-size: 24px;
+}
+.content-container>.main>.body>.bullets{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 15px;
+}
+.content-container>.main>.body>.bullets>.bullet{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+}
+.content-container>.side-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.content-container>.side-container>.side-card{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.content-container>.side-container>.side-card>.side-card-image:hover img{
+    scale:1.1;
+}
+.content-container>.side-container>.side-card>.body>.title{
+    font-family: "Kaisei Decol";
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.content-container>.side-container>.side-card>.body>.bullets{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-bottom: 5px;
+}
+.content-container>.side-container>.side-card>.body>.bullets>.bullet{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.submitted-article-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.submitted-article-card{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.submitted-article-card>a,img{
+    border-radius: 32px;
+    transition: 0.15s ease-in;
+}
+.submitted-article-card>a:hover img{
+    scale: 1.025;
+}
+.submitted-article-card>.body{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.submitted-article-card>.body>.headline{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.submitted-article-card>.body>.headline>.tag{
+    line-height: 22px;
+}
+.submitted-article-card>.body>.headline>.title{
+    font-family: "Kaisei Decol";
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.submitted-article-card>.body>.headline>.bullets{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.submitted-article-card>.body>.headline>.bullets>.bullet{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    font-size: 12px;
+}
+.submitted-article-card>.body>p{
+    line-height: 24px;
+}
+
+.footer-contact-container{
+    background-color: #EDECFF;
+    padding: 60px;
+}
+.footer-contact{
+    font-family: "Kaisei Decol";
+    font-size: 32px;
+    text-align: center;
+}
+.footer-container{
+    padding: 60px 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
