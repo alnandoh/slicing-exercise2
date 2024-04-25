@@ -68,7 +68,6 @@ footer{
     transition: 0.15s ease-in;
 }
 .nav-container a:hover{
-    font-weight: bold;
     text-decoration: underline;
     scale: 1.2;
 }
@@ -93,10 +92,10 @@ footer{
     justify-content: space-between;
 }
 .hero-text-container{
-    width: 645px;
     display: flex;
     flex-direction: column;
     gap: 60px;
+    align-items: flex-start;
 }
 .hero-headline{
     font-family: "Kaisei Decol";
@@ -130,6 +129,9 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+.hero-card:nth-child(even){
+    flex-direction: column-reverse;
 }
 .hero-card>img{
     border-radius: 24px;
@@ -299,6 +301,9 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+.submitted-article-card:nth-child(even){
+    flex-direction: row-reverse;
 }
 .submitted-article-card>a,img{
     border-radius: 32px;
